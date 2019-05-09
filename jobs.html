@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- Project Name: JavaJam Web Site (HW29)  
+     Author: Paola Wollants 
+     Date Last Modified: May 9, 2019
+-->
+<html lang="en">
+<head>
+<title>JavaJam Coffee House - Jobs</title>
+<meta charset="utf-8">
+<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="JavaJam.css">
+</head>
+<body>
+<div id="wrapper">
+<header>
+<h1>JavaJam Coffee House</h1>
+</header>
+<nav>
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="music.html">Music</a></li>
+    <li><a href="jobs.html">Jobs</a></li> 
+</ul> 
+</nav>
+  <main>
+<div id="herojobs">
+<img src='herojobs.jpg'>
+</div>
+    <h2>Jobs at JavaJam</h2>
+    <p>Want to work at JavaJam? Fill out the form below to start your application.Required fields are marked with an asterisk(*).</p>
+   <form id="contactForm" onsubmit="return validateContactForm()"
+       action="js/processFeedback.php" method="post">
+<label for="myName">Name: </label>
+<input type="text" id="myName" name="myName" required="required"><br/>
+<label for="myEmail">E-mail: </label>
+<input type="email" id="myEmail" name="myEmail" required="required"><br/>
+<label for="myExperience">Experience: </label>
+<textarea name="myExperience" id="myExperience" rows="2" cols="20" required="required"></textarea><br/>
+<input type="submit" id="mySubmit" name="mySubmit" value="Apply Now">
+</form>
+    </div>
+    </main>
+	</div>
+    </body>
+    <footer>
+      Copyright © 2018 JavaJam Coffee House <br>
+      <a href ="mailto:jtaylor@my.loyno.edu">jtaylor@my.loyno.edu</a>
+    </footer>
+
+</html>
